@@ -21,14 +21,16 @@ const initializePassport = () => {
   },
     async (accessToken, refreshToken, profile, done) => {
       try {
-        let user = await userService.findOne({ email: profile._json.email });
+        let user = await userService.findOne({ githubId: profile.id });
+        //console.log(profile);
         if (!user) {
           let newUser = {
-            first_name: profile._json.name,
+            first_name: profile._json.name || profile.displayName || profile.username,
             last_name: "",
             age: 20,
-            email: profile._json.email,
+            email: profile._json.email || "",
             password: "",
+            githubId: profile.id,
           };
           let result = await userService.create(newUser);
           done(null, result);
@@ -39,8 +41,7 @@ const initializePassport = () => {
         return done(error);
       }
     }
-  )
-  );
+  ));
 
   ////////////////////////////////////////
   /////////// LOGIN CON GOOGLE ///////////
