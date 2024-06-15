@@ -111,6 +111,7 @@ Los modelos de MongoDB están definidos en `dao/models`
 ## Corriendo local la API
 
 La ruta http://localhost:8080/products se ve asi:
+![local-products](https://github.com/nicob201/practica_integradora_2/assets/88735420/8de2f50a-0131-43ff-8bd6-20f80880e980)
 
 # Boton "New product"
 
@@ -131,11 +132,14 @@ Al entrar a la ruta http://localhost:8080/carts los carritos que hay creados ren
 # Login
 
 Al visitar el login de la api http://localhost:8080/login se renderiza lo siguiente:
+![login-front](https://github.com/nicob201/practica_integradora_2/assets/88735420/211a4c0f-69b7-4b2f-a9fd-5275681c6b2e)
 
 # Profile
 
 El perfil del usuario logeado se ve en la siguiente ruta: http://localhost:8080/profile
+![user-profile](https://github.com/nicob201/practica_integradora_2/assets/88735420/74b835b4-a91e-420c-bb5c-1aae3b187fe6)
 
 # Pruebas desde Postman
 
 Si se realiza un GET/ a la ruta http://localhost:8080/api/sessions/current Postman muestra la siguiente respone:
+![postman-current-user](https://github.com/nicob201/practica_integradora_2/assets/88735420/42b856ca-2e7a-492a-9dc2-6cf8dfc5459c)
