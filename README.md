@@ -63,7 +63,7 @@ El presente repositorio contiene la segunda practica integradora sobre lo visto 
 1. Clona este repositorio.
 
    ```bash
-   git clone https://github.com/tu-usuario/tu-repo.git
+   git clone https://github.com/nicob201/practica_integradora_2.git
    ```
 
 ## Configuración
