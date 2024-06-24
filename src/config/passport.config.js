@@ -14,8 +14,8 @@ const initializePassport = () => {
   /////////// LOGIN CON GITHUB ///////////
   ////////////////////////////////////////
   passport.use("github", new GitHubStrategy({
-    clientID: process.env.clientID,
-    clientSecret: process.env.clientSecret,
+    clientID: process.env.CLIENT_ID,
+    clientSecret: process.env.CLIENT_SECRET,
     callbackURL: "http://localhost:8080/api/sessions/githubcallback",
     customHeaders: { 'prompt': 'select_account' }
   },
